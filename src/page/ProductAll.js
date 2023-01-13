@@ -10,7 +10,7 @@ const ProductAll = () => {
         //q라고 시작되는 것의 아이템을 searchQuery에 넣기
         let searchQuery = query.get("q") || "";
         console.log("쿼리값은? ",searchQuery);
-        let url = `https://my-json-server.typicode.com/hoger96/React/products?q=${searchQuery}`
+        let url = `https://my-json-server.typicode.com/hoger96/bb/products?q=${searchQuery}`
         let response = await fetch(url);
         let data = await response.json()
         setProductList(data);
